@@ -34,7 +34,5 @@ export async function updateSession(request: NextRequest) {
     return NextResponse.redirect(url);
   }
 
-  // IMPORTANTE: retorne sempre o `supabaseResponse` (ou copie seus cookies
-  // para outra response), senão a sessão pode dessincronizar.
   return supabaseResponse;
 }
